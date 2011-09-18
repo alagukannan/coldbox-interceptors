@@ -1,0 +1,29 @@
+{
+   "type":"struct",
+   "items":{
+      "maintenanceModeEnabled":{
+         "type":"boolean",
+		 "required": "true"
+      },
+      "rules":{
+         "type":"array",
+         "keys":{
+            "type":"struct",
+            "items":{
+               "eventPattern":{
+                  "type":"string",
+                  "required":"true"
+               },
+               "redirectURI":{
+                  "type":"string",
+                  "required":"false"
+               },
+			   "overrideEvent":{
+                  "type":"string",
+                  "required":"false"
+               }			   
+            }
+         }
+      }
+   }
+}
